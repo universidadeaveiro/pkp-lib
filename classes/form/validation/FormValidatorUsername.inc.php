@@ -28,7 +28,7 @@ class FormValidatorUsername extends FormValidator {
 		import('lib.pkp.classes.validation.ValidatorRegExp');
 		parent::__construct(
 			$form, $field, $type, $message,
-			new ValidatorRegExp('/^[a-z0-9]+([\-_][a-z0-9]+)*$/')
+			new ValidatorRegExp('/^[a-z0-9]+([\-_@.][a-z0-9]+)*$/')
 		);
 	}
 }
